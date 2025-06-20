@@ -2,25 +2,25 @@ import React from 'react';
 
 // --- SVG Icons for Research Areas ---
 const IconOscillator = () => (
-  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
   </svg>
 );
 
 const IconSync = () => (
-  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
   </svg>
 );
 
 const IconModel = () => (
-  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
   </svg>
 );
 
 const IconSignal = () => (
-  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg className="w-8 h-8 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18" />
   </svg>
 );
@@ -64,7 +64,7 @@ function App() {
       name: 'Prof. V. K. Chandrasekar',
       role: 'Principal Investigator',
       avatarUrl: 'https://placehold.co/256x256/E2E8F0/4A5568?text=VKC',
-      description: "Leads the NSS Lab with a focus on nonlinear dynamics, chaos theory, and complex systems. His work drives the lab's innovative research direction."
+      description: "Leads the NSS Lab with a focus on nonlinear dynamics, chaos theory, and complex systems."
     },
     {
       name: 'Research Scholars',
@@ -76,10 +76,9 @@ function App() {
 
   return (
     <>
-      <style>{`
-        html { scroll-behavior: smooth; }
-      `}</style>
+      <style>{`html { scroll-behavior: smooth; }`}</style>
       <div className="bg-slate-50 text-gray-800 min-h-screen font-sans">
+        {/* Header */}
         <header className="bg-white/80 backdrop-blur-lg sticky top-0 border-b border-gray-200/60 shadow-sm z-50">
           <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
             <h1 className="text-xl font-bold text-blue-700 tracking-tight">NSS Lab · SASTRA</h1>
@@ -93,6 +92,7 @@ function App() {
         </header>
 
         <main>
+          {/* Hero */}
           <section className="text-center px-6 py-28 md:py-36 bg-white border-b border-gray-200">
             <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tighter mb-4">
               Nonlinear Systems & Simulations Lab
@@ -102,15 +102,17 @@ function App() {
             </p>
           </section>
 
+          {/* About */}
           <section id="about" className="py-24 sm:py-32 bg-slate-50">
             <div className="max-w-4xl mx-auto px-6 lg:px-8">
               <h3 className="text-3xl font-bold tracking-tight text-blue-800 mb-6 text-center">About The Lab</h3>
               <p className="text-gray-700 text-lg leading-relaxed text-center">
-                We are a multidisciplinary research group at SASTRA Deemed University, focusing on the fundamental principles of nonlinear system dynamics, mathematical modeling, and real-world simulations. Our mission is to unravel the complexities of dynamic systems through cutting-edge analytical and computational techniques.
+                We are a multidisciplinary research group at SASTRA Deemed University, focusing on nonlinear system dynamics, mathematical modeling, and real-world simulations.
               </p>
             </div>
           </section>
 
+          {/* Research */}
           <section id="research" className="py-24 sm:py-32 bg-white border-y border-gray-200">
             <div className="max-w-6xl mx-auto px-6 lg:px-8">
               <div className="text-center">
@@ -128,6 +130,7 @@ function App() {
             </div>
           </section>
 
+          {/* Team */}
           <section id="team" className="py-24 sm:py-32 bg-slate-50">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
               <h3 className="text-3xl font-bold tracking-tight text-blue-800 mb-12">Meet the Team</h3>
@@ -144,6 +147,7 @@ function App() {
             </div>
           </section>
 
+          {/* Footer */}
           <footer id="contact" className="bg-gray-800 text-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 text-center">
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
